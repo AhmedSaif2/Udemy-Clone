@@ -1,0 +1,23 @@
+
+/* Medium Screen */
+@media (max-width:1100px){
+    .menu-elements{
+        display: none;
+    }
+}
+
+/* Small Screen */
+@media (max-width:800px) {
+    .login-button, .signup-button,.search-form,.menu-button{
+        display: none;
+    }
+    .dropdown-menu,.small-screen-search{
+        display: inline;
+    }
+    .small-screen-text{
+        display: block;
+    }
+    .offers-box{
+       display: none;
+    }
+}
