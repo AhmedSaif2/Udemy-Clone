@@ -8,7 +8,7 @@
 
 /* Small Screen */
 @media (max-width:800px) {
-    .login-button, .signup-button,.search-form,.menu-button{
+    .login-button, .signup-button,.search-form,.nav-button{
         display: none;
     }
     .dropdown-menu,.small-screen-search{
@@ -17,7 +17,7 @@
     .small-screen-text{
         display: block;
     }
-    .offers-box{
+    .offers-text-box{
        display: none;
     }
 }

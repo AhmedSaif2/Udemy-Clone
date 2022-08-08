@@ -2,8 +2,8 @@
 
 *{
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
     
 }
@@ -30,22 +30,22 @@ a{
     margin-right: 15px;
 }
 
-.menu-button{
-    background:none;
+.nav-button{
+    background: none;
     border: none;
     font-size: 0.8rem;
     margin-bottom: 5px;
     margin-right: 15px;
 }
 
-.menu-button:hover{
+.nav-button:hover{
     color:#a435f0;
     cursor: pointer;
 }
 
 .search-form{
     display: inline-block;
-    width:35%;
+    width: 35%;
     border:1px solid;
     height: 40px;
     border-radius: 25px;
@@ -58,19 +58,19 @@ a{
     display: none;
 }
 
-.submit{
+.submit-button{
     margin-right: 5px;
     border: none;
     background: none;
 }
 
-.submit:hover{
+.submit-button:hover{
     cursor: pointer;
 }
 
 .search-bar{
     width: 87%;
-    border:none;
+    border: none;
     background: none;
 }
 
@@ -86,14 +86,14 @@ a{
 .login-button{
     background-color: white;
     border: 2px solid black;
-    padding:10px;
+    padding: 10px;
     width: 85px;
     font-weight: bold;
 }
 
 .signup-button{
     background-color: black;
-    padding:10px;
+    padding: 10px;
     width: 85px;
     color:white;
     font-weight: bold;
@@ -115,15 +115,15 @@ a{
     margin: 2px 10%;
 }
 
-.offers-container{
-    background-image: url("images/Alarm-image.jpg");
+.offers-section{
+    background-image: url(images/Alarm-image.jpg);
     background-size: cover;
     background-position: right center;
     display: flex;
     height: 35vw;
 }
 
-.offers-box{
+.offers-text-box{
     display: flex;
     flex-direction: column;
     font-size: min(20px,2vw);
@@ -142,7 +142,8 @@ a{
 
 }
 
-h3,h4{
+h3,
+h4{
     font-weight: normal;
 }
 /* End Offers Section */
@@ -150,22 +151,22 @@ h3,h4{
 
 /* Styling Courses Section */
 
-.overview{
+.courses-overview{
     font-size: min(20px,2vw);
     padding: 2%;
 }
 
-.overview ul{
+.courses-overview ul{
     margin: 1% 0px;
 }
-.overview li{
+.courses-overview li{
     margin-right: 1vw;
     display: inline;
     color:gray;
 }
 
 .courses-categories{
-    background:none;
+    background: none;
     border: none;
     font-size: min(20px,1vw);
     color:#777077;
@@ -186,7 +187,7 @@ h3,h4{
     width: 75vw;
 }
 
-.courses-container .Text-info{
+.courses-container .python-description{
     width:70vw;
 }
 
@@ -198,11 +199,11 @@ h3,h4{
 
 .courses-flex-box{
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .course img{
-    width:200px;
+    width: 200px;
     height: 50%;
 }
 
@@ -227,7 +228,8 @@ h3,h4{
     color:grey;
 }
 
-.fa-star,.rating{
+.fa-star,
+.rating{
     font-size: min(15px,1vw);
     color:#ffa500 !important;
 } 
