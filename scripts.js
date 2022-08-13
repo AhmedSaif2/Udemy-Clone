@@ -2,11 +2,12 @@ let coursesData;
 
 function fetchCourses() {
   let parent = document.querySelector(".courses-flex-box");
-  fetch("http://localhost:3000/courses")
+  fetch("https://ahmedsaif2.github.io/Udemy-Clone/db.json")
     .then((Response) => Response.json())
     .then((items) => {
-      coursesData = items;
-      items.forEach((item) => {
+      console.log(items.courses);
+      coursesData = items.courses;
+      coursesData.forEach((item) => {
         parent.append(addCourse(item));
       });
     });
