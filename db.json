@@ -1,0 +1,74 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "category": "python",
+      "course_img": "images/Course 1.PNG",
+      "title": "Learn Python: The Complete Python Programming Course",
+      "author": "Avinash Jain, The Codex",
+      "rating": 4.4,
+      "ratings_count": "2,916",
+      "price": "E£679.99"
+    },
+    {
+      "id": 2,
+      "category": "python",
+      "course_img": "images/Course 2.PNG",
+      "title": "Learning Python for Data Analysis and Visualization",
+      "author": "Jose Portilla",
+      "rating": 4.4,
+      "ratings_count": "17,984",
+      "price": "E£1,599.99"
+    },
+    {
+      "id": 3,
+      "category": "python",
+      "course_img": "images/Course 3.PNG",
+      "title": "Python for Beginners - Learn Programming from scratch",
+      "author": "Edwin Diaz, Coding Faculty Solutions",
+      "rating": 4.4,
+      "ratings_count": "1,766",
+      "price": "E£679.99"
+    },
+    {
+      "id": 4,
+      "category": "python",
+      "course_img": "images/Course 4.PNG",
+      "title": "Learn Python: Python for Beginners",
+      "author": "Abrar Hussain",
+      "rating": 4.3,
+      "ratings_count": "2,767",
+      "price": "E£319.99"
+    },
+    {
+      "id": 5,
+      "category": "python",
+      "course_img": "images/Course 5.PNG",
+      "title": "Python Beyond the Basics - Object-Oriented Programming",
+      "author": "Infinite Skills",
+      "rating": 4.4,
+      "ratings_count": "2,929",
+      "price": "E£519.99"
+    },
+    {
+      "id": 6,
+      "category": "excel",
+      "course_img": "images/Excel Course 1.PNG",
+      "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+      "author": "Infinite Skills",
+      "rating": 4.6,
+      "ratings_count": "1,617",
+      "price": "E£199.99"
+    },
+    {
+      "id": 7,
+      "category": "excel",
+      "course_img": "images/Excel Course 2.PNG",
+      "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
+      "author": "Infinite Skills",
+      "rating": 4.5,
+      "ratings_count": "3,501",
+      "price": "E£219.99"
+    }
+  ]
+}
