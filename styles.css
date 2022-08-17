@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  color: black;
+  font-weight: normal;
+  line-height: normal;
 }
 
 /*  Styling Header  */
@@ -15,9 +18,10 @@ header {
   box-shadow: 2px 2px #efefef;
   height: 80px;
   padding: 0px 20px;
+  margin-bottom: 2px;
 }
 
-.dropdown-menu {
+.my-dropdown-menu {
   display: none;
 }
 
@@ -108,51 +112,54 @@ a {
 /* End Of Header */
 
 /* Styling Offers Section */
-.container {
-  margin: 2px 10%;
-}
 
 .offers-section {
   background-image: url(images/Alarm-image.jpg);
-  background-size: cover;
-  background-position: right center;
   display: flex;
-  height: 35vw;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .offers-text-box {
   display: flex;
   flex-direction: column;
-  font-size: min(20px, 2vw);
+  font-size: min(20px, 2vw) !important;
   margin: 4% 4%;
   padding: 20px;
   background-color: white;
-  height: 170px;
-  width: 435px;
+  height: 120px;
+  width: 350px;
   box-shadow: 2px 2px 2px 2px #efefef;
 }
 .small-screen-text {
   display: none;
   margin-top: 10px;
-  font-size: min(20px, 2vw);
-  padding-left: 2vw;
+  font-size: min(20px, 2vw) !important;
+}
+
+h2 {
+  font-weight: bold !important;
+  font-size: min(20px, 10vw) !important;
 }
 
 h3,
 h4 {
-  font-weight: normal;
+  font-weight: normal !important;
+  font-size: min(15px, 5vw) !important;
 }
 /* End Offers Section */
 
 /* Styling Courses Section */
 
 .courses-overview {
-  font-size: min(20px, 2vw);
-  padding: 2%;
+  font-size: min(20px, 2vw) !important;
+  /* padding: 2%; */
 }
 
 .courses-overview ul {
   margin: 1% 0px;
+  padding-left: 0px;
 }
 .courses-overview li {
   margin-right: 1vw;
@@ -179,11 +186,6 @@ h4 {
   flex-direction: column;
   font-size: min(20px, 2vw);
   padding: 3vw;
-  width: 75vw;
-}
-
-.courses-container .python-description {
-  width: 70vw;
 }
 
 .explore {
@@ -207,6 +209,7 @@ h4 {
   height: 50%;
   margin-right: 15px;
   margin-bottom: 5px;
+  font-family: sans-serif !important;
 }
 
 .course:hover {
