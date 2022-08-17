@@ -5,7 +5,6 @@ function fetchCourses() {
   fetch("http://localhost:3000/courses")
     .then((Response) => Response.json())
     .then((items) => {
-      console.log(items);
       coursesData = items;
       coursesData.forEach((item) => {
         parent.append(addCourse(item));
@@ -58,7 +57,42 @@ function onSearchClick(event) {
   });
 }
 
+function onTabClick(categoryName, button) {
+  let items = coursesData;
+  if (categoryName == "all") {
+    items.forEach((item) => {
+      let element = document.querySelector(".id-" + item.id);
+      if (!element) {
+        let parent = document.querySelector(".courses-flex-box");
+        parent.append(addCourse(item));
+      }
+    });
+  } else {
+    items.forEach((item) => {
+      console.log(categoryName);
+      console.log(item.category);
+      let element = document.querySelector(".id-" + item.id);
+      if (element && item.category != categoryName) {
+        element.remove();
+      } else if (!element && item.category == categoryName) {
+        let parent = document.querySelector(".courses-flex-box");
+        parent.append(addCourse(item));
+      }
+    });
+  }
+}
+
 fetchCourses();
 
 let searchButton = document.querySelector(".submit-button");
 searchButton.addEventListener("click", onSearchClick);
+
+let categoryTabs = document.querySelectorAll(".courses-categories");
+for (i = 0; i < categoryTabs.length; i++) {
+  let categoryName = categoryTabs[i].innerHTML.toLowerCase();
+  categoryTabs[i].addEventListener(
+    "click",
+    onTabClick.bind(null, categoryName, categoryTabs[i]),
+    false
+  );
+}
