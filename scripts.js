@@ -1,7 +1,7 @@
 let coursesData;
 
 function fetchCourses() {
-  let parent = document.querySelector(".courses-flex-box");
+  let parent = document.querySelector(".swiper-wrapper");
   fetch("http://localhost:3000/courses")
     .then((Response) => Response.json())
     .then((items) => {
@@ -15,6 +15,7 @@ function fetchCourses() {
 function addCourse(item) {
   let course = document.createElement("div");
   course.classList.add("course");
+  course.classList.add("swiper-slide");
   course.classList.add("id-" + item.id);
   course.innerHTML = `
     <img src="${item.course_img}" alt="${item.category} Course" />
@@ -51,7 +52,7 @@ function onSearchClick(event) {
     if (element && !searchTextFound) {
       element.remove();
     } else if (!element && searchTextFound) {
-      let parent = document.querySelector(".courses-flex-box");
+      let parent = document.querySelector(".swiper-wrapper");
       parent.append(addCourse(item));
     }
   });
@@ -62,20 +63,21 @@ function onTabClick(categoryName, button) {
   if (categoryName == "all") {
     items.forEach((item) => {
       let element = document.querySelector(".id-" + item.id);
-      if (!element) {
-        let parent = document.querySelector(".courses-flex-box");
-        parent.append(addCourse(item));
+      if (element) {
+        element.remove();
       }
+    });
+    items.forEach((item) => {
+      let parent = document.querySelector(".swiper-wrapper");
+      parent.append(addCourse(item));
     });
   } else {
     items.forEach((item) => {
-      console.log(categoryName);
-      console.log(item.category);
       let element = document.querySelector(".id-" + item.id);
       if (element && item.category != categoryName) {
         element.remove();
       } else if (!element && item.category == categoryName) {
-        let parent = document.querySelector(".courses-flex-box");
+        let parent = document.querySelector(".swiper-wrapper");
         parent.append(addCourse(item));
       }
     });
@@ -83,6 +85,29 @@ function onTabClick(categoryName, button) {
 }
 
 fetchCourses();
+
+var swiper = new Swiper(".courses-swipper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1400: {
+      slidesPerView: 5,
+    },
+  },
+  navigation: {
+    nextEl: ".next-button",
+    prevEl: ".prev-button",
+  },
+});
 
 let searchButton = document.querySelector(".submit-button");
 searchButton.addEventListener("click", onSearchClick);
