@@ -1,8 +1,9 @@
+const URL = "http://localhost:3000/courses";
 let coursesData;
 
 function fetchCourses() {
   let parent = document.querySelector(".swiper-wrapper");
-  fetch("http://localhost:3000/courses")
+  fetch(URL)
     .then((Response) => Response.json())
     .then((items) => {
       coursesData = items;
