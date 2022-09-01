@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000/courses";
+const URL = "https://ahmedsaif2.github.io/Udemy-Clone/db.json";
 let coursesData;
 
 function fetchCourses() {
@@ -6,7 +6,7 @@ function fetchCourses() {
   fetch(URL)
     .then((Response) => Response.json())
     .then((items) => {
-      coursesData = items;
+      coursesData = items.courses;
       coursesData.forEach((item) => {
         parent.append(addCourse(item));
       });
