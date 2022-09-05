@@ -10,12 +10,23 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <title>Udemy</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <i class="dropdown-menu fa-solid fa-bars"></i>
+      <i class="my-dropdown-menu fa-solid fa-bars"></i>
       <a href="#">
         <img
           src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -53,17 +64,17 @@
     <section class="container">
       <div class="offers-section">
         <div class="offers-text-box">
-          <h1>New to Udemy? Lucky you.</h1>
-          <h3>
+          <h2>New to Udemy? Lucky you.</h2>
+          <h4>
             Courses at E£169.99. Get your new-student offer before it expires.
-          </h3>
+          </h4>
         </div>
       </div>
       <div class="small-screen-text">
-        <h1>New to Udemy? Lucky you.</h1>
-        <h3>
+        <h2>New to Udemy? Lucky you.</h2>
+        <h4>
           Courses at E£169.99. Get your new-student offer before it expires.
-        </h3>
+        </h4>
       </div>
     </section>
     <!-- End Of Offers Section  -->
@@ -71,12 +82,13 @@
     <!-- Courses Section -->
     <section class="container">
       <div class="courses-overview">
-        <h1>A broad selection of courses</h1>
-        <h3>
+        <h2>A broad selection of courses</h2>
+        <h4>
           Choose from 185,000 online video courses with additions published
           every month
-        </h3>
+        </h4>
         <ul>
+          <li><button class="courses-categories">All</button></li>
           <li><button class="courses-categories">Python</button></li>
           <li><button class="courses-categories">Excel</button></li>
           <li><button class="courses-categories">Web Development</button></li>
@@ -99,118 +111,110 @@
             </p>
             <br />
           </div>
-          <button class="explore login-button">Explore Python</button>
+          <button class="explore login-button m-auto">Explore Python</button>
           <br />
           <br />
-          <div class="courses-flex-box">
-            <div class="course">
-              <img src="images/Course 1.PNG" alt="Python Course" />
-              <h2>Learn Python: The Complete Python Programming Course</h2>
-              <span>Avinash Jain, The Codex</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(2,916)</span>
-              <h2>E£679.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 2.PNG" alt="Python Course" />
-              <h2>Learning Python for Data Analysis and Visualization</h2>
-              <span>Jose Portilla</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(17,984)</span>
-              <h2>E£1,599.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 3.PNG" alt="Python Course" />
-              <h2>Python for Beginners - Learn Programming from scratch</h2>
-              <span>Edwin Diaz, Coding Faculty Solutions</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span> (1,766)</span>
-              <h2>E£679.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 4.PNG" alt="Python Course" />
-              <h2>Learn Python: Python for Beginners</h2>
-              <span>Abrar Hussain</span><br />
-              <span class="rating">4.3</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span> (2,767)</span>
-              <h2>E£319.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 5.PNG" alt="Python Course" />
-              <h2>Python Beyond the Basics - Object-Oriented Programming</h2>
-              <span>Infinite Skills</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(2,929)</span>
-              <h2>E£519.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 5.PNG" alt="Python Course" />
-              <h2>Python Beyond the Basics - Object-Oriented Programming</h2>
-              <span>Infinite Skills</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(2,929)</span>
-              <h2>E£519.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 5.PNG" alt="Python Course" />
-              <h2>Python Beyond the Basics - Object-Oriented Programming</h2>
-              <span>Infinite Skills</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(2,929)</span>
-              <h2>E£519.99</h2>
-            </div>
-            <div class="course">
-              <img src="images/Course 5.PNG" alt="Python Course" />
-              <h2>Python Beyond the Basics - Object-Oriented Programming</h2>
-              <span>Infinite Skills</span><br />
-              <span class="rating">4.4</span>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(2,929)</span>
-              <h2>E£519.99</h2>
+
+          <div class="swiper courses-swipper">
+            <div class="swiper-wrapper text-center"></div>
+            <div class="swip-buttons-container d-flex justify-content-between">
+              <div class="prev-button">
+                <i class="fa-solid fa-angle-left swip-button"></i>
+              </div>
+              <div class="next-button">
+                <i class="fa-solid fa-angle-right swip-button"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- End Of Courses Section -->
+
+    <!-- Top Categories Section -->
+    <section class="container">
+      <h2 class="text-sm-start text-center my-3">Top Categories</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+            alt="Design Courses"
+          />
+          <div class="my-3 fw-bold">Design</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+            alt="Development Courses"
+          />
+          <div class="my-3 fw-bold">Development</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+            alt="Marketing Courses"
+          />
+          <div class="my-3 fw-bold">Marketing</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+            alt="IT and Software Courses"
+          />
+          <div class="my-3 fw-bold">IT and Software</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
+            alt="personal-development Courses"
+          />
+          <div class="my-3 fw-bold">Personal Development</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+            alt="Business Courses"
+          />
+          <div class="my-3 fw-bold">Business</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+            alt="Photography Courses"
+          />
+          <div class="my-3 fw-bold">Photography</div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
+          <img
+            class="img-fluid"
+            src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
+            alt="Music Courses"
+          />
+          <div class="my-3 fw-bold">Music</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Top Categories Section -->
+
+    <!-- Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="scripts.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
