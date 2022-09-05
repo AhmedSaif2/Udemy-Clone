@@ -1,16 +1,14 @@
-const URL = "https://ahmedsaif2.github.io/Udemy-Clone/db.json";
+const url = "https://ahmedsaif2.github.io/Udemy-Clone/db.json";
 let coursesData;
 
-function fetchCourses() {
+async function fetchCourses() {
   let parent = document.querySelector(".swiper-wrapper");
-  fetch(URL)
-    .then((Response) => Response.json())
-    .then((items) => {
-      coursesData = items.courses;
-      coursesData.forEach((item) => {
-        parent.append(addCourse(item));
-      });
-    });
+  const Response = await fetch(url);
+  const items = await Response.json();
+  coursesData = items.courses;
+  coursesData.forEach((item) => {
+    parent.append(addCourse(item));
+  });
 }
 
 function addCourse(item) {
